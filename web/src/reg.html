@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <div class="text-center">
+      <div>
         <div class="row">
           <div class="col-3">
             <a class="nav-link logotext" href="index.html"><img src="/imgs/nyan.gif" alt="cat" class="logo">Adopt a pussy!</a>
@@ -39,49 +39,52 @@
           </div>
         </div>
       </header>
-      <div class="container regbox px-4 py-4 text-center justify-content-center">
-        <h1>Regisztráció</h1>
-        <div class="mb-3 mt-4 row">
-          <label for="lastName" class="col-sm-3 col-form-label">Vezetéknév</label>
-          <div class="col-sm-8">
-            <input type="text" class="form-control">
+
+      <form name="form1">
+        <div class="container regbox px-4 py-4 text-center justify-content-center">
+          <h1>Regisztráció</h1>
+          <div class="mb-3 mt-4 row">
+            <label for="lastName" class="col-sm-3 col-form-label">Vezetéknév</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+              <label for="firstName" class="col-sm-3 col-form-label">Keresztnév</label>
+              <div class="col-sm-8">
+                  <input type="text" class="form-control">
+              </div>
+          </div>
+          <div class="mb-3 row">
+              <label for="text" class="col-sm-3 col-form-label">Lakcím</label>
+              <div class="col-sm-8">
+                  <input type="text" class="form-control">
+              </div>
+          </div>
+          <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-3 col-form-label">E-mail</label>
+              <div class="col-sm-8">
+                  <input type="email" class="form-control" id="inputEmail">
+              </div>
+          </div>
+          <div class="mb-3 row">
+              <label for="inputPassword" class="col-sm-3 col-form-label">Jelszó</label>
+              <div class="col-sm-8">
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+          </div>
+          <div class="mb-3 row">
+              <label for="inputPassword" class="col-sm-3 col-form-label">Jelszó újra</label>
+              <div class="col-sm-8">
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+          </div>
+            <button type="submit" class="btn btn-primary mt-2 mb-2" name="submit" value="Belép" onclick="ValidateEmail(document.form1.text1)">Regisztrálás</button>
+          <div class="reglink mt-3">
+            <p>Rendelkezik már fiókkal?<a href="login.html"> Jelenkezzen be!</a></p>
           </div>
         </div>
-        <div class="mb-3 row">
-            <label for="firstName" class="col-sm-3 col-form-label">Keresztnév</label>
-            <div class="col-sm-8">
-                <input type="text" class="form-control">
-            </div>
-        </div>
-        <div class="mb-3 row">
-            <label for="text" class="col-sm-3 col-form-label">Lakcím</label>
-            <div class="col-sm-8">
-                <input type="text" class="form-control">
-            </div>
-        </div>
-        <div class="mb-3 row">
-            <label for="staticEmail" class="col-sm-3 col-form-label">E-mail</label>
-            <div class="col-sm-8">
-                <input type="email" class="form-control" id="inputEmail">
-            </div>
-        </div>
-        <div class="mb-3 row">
-            <label for="inputPassword" class="col-sm-3 col-form-label">Jelszó</label>
-            <div class="col-sm-8">
-              <input type="password" class="form-control" id="inputPassword">
-            </div>
-        </div>
-        <div class="mb-3 row">
-            <label for="inputPassword" class="col-sm-3 col-form-label">Jelszó újra</label>
-            <div class="col-sm-8">
-              <input type="password" class="form-control" id="inputPassword">
-            </div>
-        </div>
-          <button type="submit" class="btn btn-primary mt-2 mb-2">Regisztrálás</button>
-        <div class="reglink mt-3">
-          <p>Rendelkezik már fiókkal?<a href="login.html"> Jelenkezzen be!</a></p>
-        </div>
-      </div>
+      </form>
       
       <footer class="fixed-bottom">©2024 ADOPT A PUSSY | All rights reserved</footer>
     <script src="app.js"></script>

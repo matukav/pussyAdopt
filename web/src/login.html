@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <div class="text-center">
+      <div>
         <div class="row">
           <div class="col-3">
             <a class="nav-link logotext" href="index.html"><img src="/imgs/nyan.gif" alt="cat" class="logo">Adopt a pussy!</a>
@@ -39,25 +39,28 @@
           </div>
         </div>
       </header>
-      <div class="container loginbox px-4 py-4 text-center justify-content-center">
-        <h1>Bejelentkezés</h1>
-        <div class="mb-3 mt-4 row">
-          <label for="staticEmail" class="col-sm-3 col-form-label">E-mail</label>
-          <div class="col-sm-8">
-            <input type="email" class="form-control" id="inputEmail">
+
+      <form name="form1">
+        <div class="container loginbox px-4 py-4 text-center justify-content-center">
+          <h1>Bejelentkezés</h1>
+          <div class="mb-3 mt-4 row">
+            <label for="staticEmail" class="col-sm-3 col-form-label">E-mail</label>
+            <div class="col-sm-8">
+              <input type="email" class="form-control" id="inputEmail" type='text' name='text1'>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Jelszó</label>
+            <div class="col-sm-8">
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+          </div>
+            <button type="submit" class="btn btn-primary mt-2 mb-2" name="submit" value="Belép" onclick="ValidateEmail(document.form1.text1)">Bejelentkezés</button>
+          <div class="reglink mt-3">
+            <p>Nem rendelkezik még fiókkal? <a href="reg.html"> Regisztráljon itt!</a></p>
           </div>
         </div>
-        <div class="mb-3 row">
-          <label for="inputPassword" class="col-sm-3 col-form-label">Jelszó</label>
-          <div class="col-sm-8">
-            <input type="password" class="form-control" id="inputPassword">
-          </div>
-        </div>
-          <button type="submit" class="btn btn-primary mt-2 mb-2">Bejelentkezés</button>
-        <div class="reglink mt-3">
-          <p>Nem rendelkezik még fiókkal? <a href="reg.html"> Regisztráljon itt!</a></p>
-        </div>
-      </div>
+      </form>
       
       <footer class="fixed-bottom">©2024 ADOPT A PUSSY | All rights reserved</footer>
     <script src="app.js"></script>
